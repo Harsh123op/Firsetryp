@@ -38,4 +38,4 @@ def download_reel(client, message):
         except Exception as e:
             message.reply(f"An error occurred: {e}")
     else:
-        message.reply("Please send a valid Instagram Reel URL.")￼Enter
+        message.reply("Please send a valid Instagram Reel URL.")
