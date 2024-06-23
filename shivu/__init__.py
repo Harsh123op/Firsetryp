@@ -21,14 +21,14 @@ from shivu.config import Development as Config
 
 OWNER_ID = '6867197197'
 sudo_users = ["6867197197", "6867197197", "6867197197", "6867197197", "6867197197"]
-GROUP_ID = "-1002059626060"
-TOKEN = "6786511875:AAHqLOSR9zQWKSt-DoW2M4YKaJMMAOcnWMA"
-mongo_url = "mongodb+srv://harshmanjhi0001:harsh2279@cluster0.8lgrc9i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+GROUP_ID = "-1002079121146"
+TOKEN = "7486770290:AAEoAwYTlt-Hq0iZ3nzHKBPc71U7jJBPiF4"
+mongo_url = "mongodb+srv://harshmanjhi180:harsh2279@cluster0.z1pajuv.mongodb.net/?retryWrites=true&w=majority"
 PHOTO_URL = ["https://telegra.ph/file/aa06eb4b312f456e1fd28.jpg", "https://telegra.ph/file/aa06eb4b312f456e1fd28.jpg"]
-SUPPORT_CHAT = "koku_back"
-UPDATE_CHAT = "SUKUNA_UPDATE_CHANNEL"
-BOT_USERNAME = "Dark_waifu_Bot"
-CHARA_CHANNEL_ID = "-1002059626060"
+SUPPORT_CHAT = "@dark_dream_world"
+UPDATE_CHAT = "@dark_dream_world"
+BOT_USERNAME = "WaifusProXBot"
+CHARA_CHANNEL_ID = "-1002079121146"
 api_id = "28062766"
 api_hash = "2087f7a333490600faeb42a9c0267406"
 
@@ -42,7 +42,7 @@ image_urls = [
     "https://telegra.ph/file/badce7884ce06e92cedb5.jpg"
 ]
 
-DESTINATION_DB_URL = "mongodb+srv://Komi:Aarught5645@cluster0.8usl8ul.mongodb.net/?retryWrites=true&w=majority"
+DESTINATION_DB_URL = "mongodb+srv://harshmanjhi180:harsh2279@cluster0.z1pajuv.mongodb.net/?retryWrites=true&w=majority"
 
 
 lol2 = AsyncIOMotorClient(mongo_url)
