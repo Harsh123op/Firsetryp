@@ -5,16 +5,15 @@ class Config(object):
 OWNER_ID = '6655070772'
 sudo_users = ["6655070772", "6090374191", "6655070772", "5297949798", "6655070772", "6655070772"]
 GROUP_ID = "-1002059626060"
-TOKEN = "6721869429:AAFQUnBJLuicOoD8w-lknA4_s4fe1bYg6-U"
-mongo_url = "mongodb+srv://Komi:Aarught5645@cluster0.8usl8ul.mongodb.net/?retryWrites=true&w=majority"
+TOKEN = "7392456702:AAEH7VyQQLxjBM1g4uZ4OjZlKXQT-soZyJw"
+mongo_url = "mongodb+srv://waifu12:22792279@cluster0.h9gzbqw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 PHOTO_URL = ["https://telegra.ph/file/aa06eb4b312f456e1fd28.jpg", "https://telegra.ph/file/aa06eb4b312f456e1fd28.jpg"]
-SUPPORT_CHAT = "dark_world_231"
-UPDATE_CHAT = "SUKUNA_UPDATE_CHANNEL"
-BOT_USERNAME = "Dark_waifu_Bot"
+SUPPORT_CHAT = "DDW_PFP_02"
+UPDATE_CHAT = "DDW_PFP_02"
+BOT_USERNAME = "gaming_x_world_bot"
 CHARA_CHANNEL_ID = "-1002059626060"
-api_id = "28062766"
-api_hash = "2087f7a333490600faeb42a9c0267406"
-
+api_id = "26208465"
+api_hash = "bd4e2fe9c30486282417cdf9a93333b2"
 
     
 class Production(Config):
