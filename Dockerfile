@@ -64,7 +64,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/FallenRobot
-RUN git clone https://github.com/Harshmanjhi/ /root/ptb
+RUN git clone https://github.com/Harshmanjhi/Firsetryp /root/Firsetryp
 WORKDIR /root/ptb
 
 
