@@ -15,7 +15,7 @@ app = shivuu
 
 collection = db['total_pm_users']
 
-MUST_JOIN = "WFKC_G"
+MUST_JOIN = "DDW_PFP_02"
 
 
 
