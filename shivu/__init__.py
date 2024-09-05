@@ -19,18 +19,18 @@ LOGGER = logging.getLogger(__name__)
 from shivu.config import Development as Config
 
 
-OWNER_ID = '6867197197'
-sudo_users = ["7404586329", "6090374191", "6867197197", "6867197197", "6867197197"]
-GROUP_ID = "-1002079121146"
-TOKEN = "7486770290:AAEoAwYTlt-Hq0iZ3nzHKBPc71U7jJBPiF4"
-mongo_url = "mongodb+srv://waifu12:waifu12@cluster0.h9gzbqw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+OWNER_ID = '7058928258'
+sudo_users = ["7058928258", "7058928258", "7058928258", "7058928258", "7058928258", "7058928258"]
+GROUP_ID = "-1002059626060"
+TOKEN = "7392456702:AAEH7VyQQLxjBM1g4uZ4OjZlKXQT-soZyJw"
+mongo_url = "mongodb+srv://waifu12:22792279@cluster0.h9gzbqw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 PHOTO_URL = ["https://telegra.ph/file/aa06eb4b312f456e1fd28.jpg", "https://telegra.ph/file/aa06eb4b312f456e1fd28.jpg"]
-SUPPORT_CHAT = "@dark_dream_world"
-UPDATE_CHAT = "@dark_dream_world"
-BOT_USERNAME = "WaifusProXBot"
-CHARA_CHANNEL_ID = "-1002079121146"
-api_id = "28062766"
-api_hash = "2087f7a333490600faeb42a9c0267406"
+SUPPORT_CHAT = "DDW_PFP_02"
+UPDATE_CHAT = "DDW_PFP_02"
+BOT_USERNAME = "gaming_x_world_bot"
+CHARA_CHANNEL_ID = "-1002059626060"
+api_id = "26208465"
+api_hash = "bd4e2fe9c30486282417cdf9a93333b2"
 
 image_urls = [
     "https://telegra.ph/file/405ee89d4a708d161a41b.jpg",
