@@ -58,20 +58,20 @@ RUN apt update && apt upgrade -y && \
     unzip \
     libopus0 \
     libopus-dev \
-    && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
+    && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/* /tmp/*
 
-# Pypi package Repo upgrade
+# Upgrade pip and setuptools
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/FallenRobot
+# Clone the repository
 RUN git clone https://github.com/Harshmanjhi/Firsetryp /root/Firsetryp
-WORKDIR /root/ptb
+WORKDIR /root/Firsetryp
 
-
-ENV PATH="/home/bot/bin:$PATH"
-
-# Install requirements
+# Install Python requirements
 RUN pip3 install -U -r requirements.txt
 
-# Starting Worker
-CMD ["python3","-m", "shivu"]
+# Set PATH environment variable
+ENV PATH="/home/bot/bin:$PATH"
+
+# Start the worker
+CMD ["python3", "-m", "shivu"]
