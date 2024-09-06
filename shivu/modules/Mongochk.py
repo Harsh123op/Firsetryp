@@ -40,5 +40,35 @@ async def mongo_command(update: Update, context: CallbackContext) -> None:
     except Exception as e:
         await update.message.reply_text(f"Error: {str(e)}")
 
-# Add the handler
+async def formatmongo_command(update: Update, context: CallbackContext) -> None:
+    if str(update.effective_user.id) not in sudo_users:
+        await update.message.reply_text("Nouu.. it's Sudo user's Command..")
+        return
+
+    if len(context.args) != 1:
+        await update.message.reply_text("Usage: /formatmongo <mongo_url>")
+        return
+
+    mongo_url = context.args[0]
+    try:
+        # Connect to MongoDB
+        client = MongoClient(mongo_url)
+        
+        # List all databases
+        databases = client.list_database_names()
+        if not databases:
+            await update.message.reply_text("No databases found to format.")
+            return
+        
+        # Drop all databases
+        for db_name in databases:
+            client.drop_database(db_name)
+        
+        await update.message.reply_text("All databases have been deleted. MongoDB instance is now empty.")
+    
+    except Exception as e:
+        await update.message.reply_text(f"Error: {str(e)}")
+
+# Add handlers
 application.add_handler(CommandHandler("mongo", mongo_command))
+application.add_handler(CommandHandler("formatmongo", formatmongo_command))
