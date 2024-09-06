@@ -7,7 +7,7 @@ async def mongo_command(update: Update, context: CallbackContext) -> None:
     if str(update.effective_user.id) not in sudo_users:
         await update.message.reply_text("Nouu.. it's Sudo user's Command..")
         return
-    
+
     if len(context.args) != 1:
         await update.message.reply_text("Usage: /mongo <mongo_url>")
         return
