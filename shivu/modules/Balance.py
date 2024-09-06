@@ -51,6 +51,8 @@ async def pay(update, context):
     # Reply with payment success and updated balance
     await update.message.reply_text(f"💵 Payment successful! You paid {amount} coins to {update.message.reply_to_message.from_user.username}. "
                                     f"Your current balance is: 💵{updated_sender_balance.get('balance', 0)} coins.")
+    await context.bot.send_message(chat_id=recipient_id, text=f"You have received {amount} coins from {update.effective_user.username}.")
+    
 
     # Trigger /balance command for the sender
     await context.bot.send_message(chat_id=update.message.chat_id, text='/balance', reply_to_message_id=update.message.message_id)
