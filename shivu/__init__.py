@@ -16,7 +16,6 @@ logging.getLogger('httpx').setLevel(logging.WARNING)
 logging.getLogger("pyrate_limiter").setLevel(logging.ERROR)
 LOGGER = logging.getLogger(__name__)
 
-from shivu.config import Development as Config
 
 
 OWNER_ID = '7058928258'
@@ -44,8 +43,8 @@ image_urls = [
 
 application = Application.builder().token(TOKEN).build()
 shivuu = Client("Shivu", api_id, api_hash, bot_token=TOKEN)
-lol = AsyncIOMotorClient(mongo_url)
-db = lol['gaming_create']
+ddw = AsyncIOMotorClient(mongo_url)
+db = ddw['gaming_create']
 user_totals_collection = db['gaming_totals']
 group_user_totals_collection = db['gaming_group_total']
 top_global_groups_collection = db['gaming_global_groups']
