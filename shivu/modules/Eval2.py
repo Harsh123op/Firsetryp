@@ -8,7 +8,7 @@ from shivu import OWNER_ID
 from shivu import shivuu
 
 Nexus = shivuu
-SUDO_USERS = 7058928258
+SUDO_USERS = 7058928258 
 
 async def aexec(code, client, message):
     exec(
