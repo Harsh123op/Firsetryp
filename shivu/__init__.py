@@ -22,7 +22,7 @@ OWNER_ID = '7058928258'
 sudo_users = ["7058928258", "6942703687", "7058928258", "7058928258", "7058928258", "7058928258"]
 GROUP_ID = "-1002059626060"
 TOKEN = "7392456702:AAEH7VyQQLxjBM1g4uZ4OjZlKXQT-soZyJw"
-mongo_url = "mongodb+srv://waifu12:22792279@cluster0.h9gzbqw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+mongo_url = "mongodb+srv://harshmanjhi1801:waifu201@cluster0.xxwc4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 PHOTO_URL = ["https://telegra.ph/file/aa06eb4b312f456e1fd28.jpg", "https://telegra.ph/file/aa06eb4b312f456e1fd28.jpg"]
 SUPPORT_CHAT = "DDW_PFP_02"
 UPDATE_CHAT = "DDW_PFP_02"
