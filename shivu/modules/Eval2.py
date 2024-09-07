@@ -7,8 +7,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from shivu import OWNER_ID
 from shivu import shivuu
 
-SUDO_USERS = ["7058928258", "6942703687"]
 Nexus = shivuu
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "7058928258 6942703687").split()))
 
 async def aexec(code, client, message):
     exec(
