@@ -42,23 +42,17 @@ image_urls = [
     "https://telegra.ph/file/badce7884ce06e92cedb5.jpg"
 ]
 
-DESTINATION_DB_URL = "mongodb+srv://waifu12:waifu12@cluster0.z1pajuv.mongodb.net/?retryWrites=true&w=majority"
-
-
-lol2 = AsyncIOMotorClient(mongo_url)
-destination_db = lol2['Character_catcher']
-destination_collection = destination_db['user_collection']
-destination_char = destination_db['anime_characters']
-
-
 application = Application.builder().token(TOKEN).build()
 shivuu = Client("Shivu", api_id, api_hash, bot_token=TOKEN)
 lol = AsyncIOMotorClient(mongo_url)
-db = lol['Character_catcher']
-user_totals_collection = db['user_totals']
-group_user_totals_collection = db['group_user_total']
-top_global_groups_collection = db['top_global_groups']
-pm_users = db['total_pm_users']
+db = lol['gaming_create']
+user_totals_collection = db['gaming_totals']
+group_user_totals_collection = db['gaming_group_total']
+top_global_groups_collection = db['gaming_global_groups']
+pm_users = db['gaming_pm_users']
+destination_collection = db['gamimg_user_collection']
+destination_char = db['gaming_anime_characters']
+
 
 user_collection = destination_collection
 collection = destination_char  # Corrected assignment
