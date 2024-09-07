@@ -206,7 +206,7 @@ async def shellrunner(michiko, message):
         await edit_or_reply(message, text=f"<b>OUTPUT :</b>\n<pre>{output}</pre>")
     else:
         await edit_or_reply(message, text="<b>OUTPUT :</b>\n<code>None</code>")
-    await message.stop_propagation()
+    await message.stop_propagation() 
 
 
   
