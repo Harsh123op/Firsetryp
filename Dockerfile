@@ -74,4 +74,4 @@ RUN pip3 install -U -r requirements.txt
 ENV PATH="/home/bot/bin:$PATH"
 
 # Start the worker
-CMD ["python3", "-m", "shivu"]
+CMD ["python3", "-m", "shivu"] 
